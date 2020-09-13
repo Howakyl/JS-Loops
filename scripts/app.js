@@ -60,33 +60,71 @@
 
 //Getting to Know You
 
-const kenny = ["Kenny", 1000, "Austin"];
-const jimHaff = ["Jim H", 16, "All cities"];
-const reuben = ["Reuben", 22, "Durham"];
-const jimClark = ["Jim C", 186, "LA"];
-const ryan = ["Ryan", 65, "Denver"];
+// const kenny = ["Kenny", 1000, "Austin"];
+// const jimHaff = ["Jim H", 16, "All cities"];
+// const reuben = ["Reuben", 22, "Durham"];
+// const jimClark = ["Jim C", 186, "LA"];
+// const ryan = ["Ryan", 65, "Denver"];
 
+// //1)
+// kenny.shift();
+// kenny.unshift('Gameboy');
+// console.log(kenny);
+
+// //2)
+// jimClark[1] += 1;
+// console.log(jimClark);
+
+// //3)
+// ryan[2] = 'Gotham City';
+// console.log(ryan);
+
+// //4) 
+// reuben.splice(2,1,'Chicago');
+// console.log(reuben);
+
+// //5)
+// jimHaff.splice(2,3,'Seattle' , 'San Fransisco' , 'Portland');
+// console.log(jimHaff);
+
+// //6)
+// jimHaff.splice(2, 1);
+// console.log(jimHaff);
+
+//////////////////////////////////////////
+
+//Yell at the Ninja Turtles
 //1)
-kenny.shift();
-kenny.unshift('Gameboy');
-console.log(kenny);
+let ninjaTurtles =['Donatello' , 'Leonardo' , 'Raphael' , 'Michaelangelo'];
 
 //2)
-jimClark[1] += 1;
-console.log(jimClark);
 
-//3)
-ryan[2] = 'Gotham City';
-console.log(ryan);
+// for (let i = 0; i < ninjaTurtles.length; i++) {
+//     ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
+//     console.log(ninjaTurtles);
+// }
 
-//4) 
-reuben.splice(2,1,'Chicago');
-console.log(reuben);
 
-//5)
-jimHaff.splice(2,3,'Seattle' , 'San Fransisco' , 'Portland');
-console.log(jimHaff);
 
-//6)
-jimHaff.splice(2, 1);
-console.log(jimHaff);
+// I couldn't figure out how to do this with an array, so I did instead using a function. I hope that's okay! 
+//Would definitely love to see a solution to this bonus question!
+function everyOtherTurtle (name) {
+    let everyOther = ""
+    for (let i = 0; i < name.length; i++) {
+        if (i % 2 === 0) {
+            everyOther += name.charAt(i).toUpperCase();
+        } else {
+            everyOther += name.charAt(i);
+        }
+    }
+    return everyOther;
+};
+console.log(everyOtherTurtle(ninjaTurtles[0]));
+console.log(everyOtherTurtle(ninjaTurtles[1]));
+console.log(everyOtherTurtle(ninjaTurtles[2]));
+console.log(everyOtherTurtle(ninjaTurtles[3]));
+
+
+
+
+
