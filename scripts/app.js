@@ -195,14 +195,61 @@
 //////////////////////////////////////////
 
 //Multiples of 3 and 5
-let sumOf = 0;
-for (let i = 0; i < 1000; i++) {
-    if (i % 3 === 0) {
-        sumOf += i;
-        // console.log(i);
-    } else if (i % 5 === 0) {
-        sumOf += i;
-        // console.log(i);
-    }
-}
-console.log(sumOf);
+// let sumOf = 0;
+// for (let i = 0; i < 1000; i++) {
+//     if (i % 3 === 0) {
+//         sumOf += i;
+//         // console.log(i);
+//     } else if (i % 5 === 0) {
+//         sumOf += i;
+//         // console.log(i);
+//     }
+// }
+// console.log(sumOf);
+
+//////////////////////////////////////////
+
+//Hungry for more?
+//Triangles
+//0
+// const argument = 7;
+//1
+// let triangle = [];
+// for (i = 0; i < 7; i++) {
+    
+//     triangle.push('#');
+//     let newTriangle = triangle.join(" ");
+//     console.log(newTriangle);
+// };
+
+//2)
+
+// let triangleFour = [' ',' ',' ',' ',' ',' ',' ',' '];
+// for (i = 8; i > 0; i--) {
+//     let newTriangle = triangleFour.join(" ");
+    
+//     triangleFour.splice(i, 1, '#');
+//     console.log(newTriangle);
+// }
+
+
+//3)
+// let triangleThree = ['#','#','#','#','#','#','#'];
+
+// for (i = 0; i < 7; i++) {
+//     let newTriangle = triangleThree.join(" ");
+//     console.log(newTriangle);
+//     triangleThree.pop('#');
+// };
+
+//4)
+
+// let triangleFive = ['#','#','#','#','#','#','#',];
+// for (i = 0; i < 7 ; i++) {
+//     let newTriangle = triangleFive.join(" ");
+    
+//     triangleFive.splice(i, 1, ' ');
+//     console.log(newTriangle);
+ //};
+
+//////////////////////////////////////////
