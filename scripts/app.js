@@ -95,36 +95,85 @@
 
 //Yell at the Ninja Turtles
 //1)
-let ninjaTurtles =['Donatello' , 'Leonardo' , 'Raphael' , 'Michaelangelo'];
+// let ninjaTurtles =['Donatello' , 'Leonardo' , 'Raphael' , 'Michaelangelo'];
 
-//2)
+// //2)
 
-// for (let i = 0; i < ninjaTurtles.length; i++) {
-//     ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
-//     console.log(ninjaTurtles);
-// }
-
-
-
-// I couldn't figure out how to do this with an array, so I did instead using a function. I hope that's okay! 
-//Would definitely love to see a solution to this bonus question!
-function everyOtherTurtle (name) {
-    let everyOther = ""
-    for (let i = 0; i < name.length; i++) {
-        if (i % 2 === 0) {
-            everyOther += name.charAt(i).toUpperCase();
-        } else {
-            everyOther += name.charAt(i);
-        }
-    }
-    return everyOther;
-};
-console.log(everyOtherTurtle(ninjaTurtles[0]));
-console.log(everyOtherTurtle(ninjaTurtles[1]));
-console.log(everyOtherTurtle(ninjaTurtles[2]));
-console.log(everyOtherTurtle(ninjaTurtles[3]));
+// // for (let i = 0; i < ninjaTurtles.length; i++) {
+// //     ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
+// //     console.log(ninjaTurtles);
+// // }
 
 
 
+// // I couldn't figure out how to do this with an array, so I did instead using a function. I hope that's okay! 
+// //Would definitely love to see a solution to this bonus question!
 
 
+// function everyOtherTurtle (name) {
+//     let everyOther = ""
+//     for (let i = 0; i < name.length; i++) {
+//         if (i % 2 === 0) {
+//             everyOther += name.charAt(i).toUpperCase();
+//         } else {
+//             everyOther += name.charAt(i);
+//         }
+//     }
+//     return everyOther;
+// };
+// console.log(everyOtherTurtle(ninjaTurtles[0]));
+// console.log(everyOtherTurtle(ninjaTurtles[1]));
+// console.log(everyOtherTurtle(ninjaTurtles[2]));
+// console.log(everyOtherTurtle(ninjaTurtles[3]));
+
+//////////////////////////////////////////
+
+//Return of the Closets
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+//Alien Attire
+//1)
+const kristynsShoe = kristynsCloset.shift();
+
+thomsCloset[2].push(kristynsShoe)
+console.log(thomsCloset);
+
+//Dress 'em Up
+//1)
+const kristynOutfitOne = `Kristyn will be wearing her ${kristynsCloset[2]}, her ${kristynsCloset[3]}, and ${kristynsCloset[0]}`;
+console.log(kristynOutfitOne);
+
+const thomOutfitOne = `For Thom's first outfit, he'll be wearing a ${thomsCloset[0][0]}, some ${thomsCloset[1][1]}, and his ${thomsCloset[2][2]}.`
+console.log(thomOutfitOne);
+
+const thomOutfitTwo = `For Thom's second outfit, he'll be wearing a ${thomsCloset[0][2]}, his ${thomsCloset[1][1]}, and a ${thomsCloset[2][1]}.`
+console.log(thomOutfitTwo);
