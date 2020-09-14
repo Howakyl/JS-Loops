@@ -165,15 +165,29 @@ const thomsCloset = [
 const kristynsShoe = kristynsCloset.shift();
 
 thomsCloset[2].push(kristynsShoe)
-console.log(thomsCloset);
+// console.log(thomsCloset);
 
 //Dress 'em Up
 //1)
 const kristynOutfitOne = `Kristyn will be wearing her ${kristynsCloset[2]}, her ${kristynsCloset[3]}, and ${kristynsCloset[0]}`;
-console.log(kristynOutfitOne);
+// console.log(kristynOutfitOne);
 
 const thomOutfitOne = `For Thom's first outfit, he'll be wearing a ${thomsCloset[0][0]}, some ${thomsCloset[1][1]}, and his ${thomsCloset[2][2]}.`
-console.log(thomOutfitOne);
+// console.log(thomOutfitOne);
 
 const thomOutfitTwo = `For Thom's second outfit, he'll be wearing a ${thomsCloset[0][2]}, his ${thomsCloset[1][1]}, and a ${thomsCloset[2][1]}.`
-console.log(thomOutfitTwo);
+// console.log(thomOutfitTwo);
+
+//Dirty Laundry
+//1)
+
+// for (let i =0; i < kristynsCloset.length; i++) {
+//     console.log(`WHIRR: Now washing ${kristynsCloset[i]}.`)
+// }
+
+//Inventory 
+//2)
+
+for (let i = 0; i < thomsCloset.length; i++) {
+    console.log(thomsCloset[i]);
+};
