@@ -130,52 +130,52 @@
 
 //Return of the Closets
 
-const kristynsCloset = [
-    "left shoe",
-    "cowboy boots",
-    "right sock",
-    "GA hoodie",
-    "green pants",
-    "yellow knit hat",
-    "marshmallow peeps"
-  ];
+// const kristynsCloset = [
+//     "left shoe",
+//     "cowboy boots",
+//     "right sock",
+//     "GA hoodie",
+//     "green pants",
+//     "yellow knit hat",
+//     "marshmallow peeps"
+//   ];
   
-const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ],[
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ],[
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
 
-//Alien Attire
-//1)
-const kristynsShoe = kristynsCloset.shift();
+// //Alien Attire
+// //1)
+// const kristynsShoe = kristynsCloset.shift();
 
-thomsCloset[2].push(kristynsShoe)
+// thomsCloset[2].push(kristynsShoe)
 // console.log(thomsCloset);
 
 //Dress 'em Up
 //1)
-const kristynOutfitOne = `Kristyn will be wearing her ${kristynsCloset[2]}, her ${kristynsCloset[3]}, and ${kristynsCloset[0]}`;
-// console.log(kristynOutfitOne);
+// const kristynOutfitOne = `Kristyn will be wearing her ${kristynsCloset[2]}, her ${kristynsCloset[3]}, and ${kristynsCloset[0]}`;
+// // console.log(kristynOutfitOne);
 
-const thomOutfitOne = `For Thom's first outfit, he'll be wearing a ${thomsCloset[0][0]}, some ${thomsCloset[1][1]}, and his ${thomsCloset[2][2]}.`
-// console.log(thomOutfitOne);
+// const thomOutfitOne = `For Thom's first outfit, he'll be wearing a ${thomsCloset[0][0]}, some ${thomsCloset[1][1]}, and his ${thomsCloset[2][2]}.`
+// // console.log(thomOutfitOne);
 
-const thomOutfitTwo = `For Thom's second outfit, he'll be wearing a ${thomsCloset[0][2]}, his ${thomsCloset[1][1]}, and a ${thomsCloset[2][1]}.`
+// const thomOutfitTwo = `For Thom's second outfit, he'll be wearing a ${thomsCloset[0][2]}, his ${thomsCloset[1][1]}, and a ${thomsCloset[2][1]}.`
 // console.log(thomOutfitTwo);
 
 //Dirty Laundry
@@ -188,6 +188,21 @@ const thomOutfitTwo = `For Thom's second outfit, he'll be wearing a ${thomsClose
 //Inventory 
 //2)
 
-for (let i = 0; i < thomsCloset.length; i++) {
-    console.log(thomsCloset[i]);
-};
+// for (let i = 0; i < thomsCloset.length; i++) {
+//     console.log(thomsCloset[i]);
+// };
+
+//////////////////////////////////////////
+
+//Multiples of 3 and 5
+let sumOf = 0;
+for (let i = 0; i < 1000; i++) {
+    if (i % 3 === 0) {
+        sumOf += i;
+        // console.log(i);
+    } else if (i % 5 === 0) {
+        sumOf += i;
+        // console.log(i);
+    }
+}
+console.log(sumOf);
